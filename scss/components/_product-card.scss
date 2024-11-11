@@ -27,6 +27,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        display: none;
     }
 
     &__title {
@@ -56,5 +57,9 @@
 
     &__star {
         margin: 0 6px 0 auto;
+    }
+
+    &:hover &__like-btn {
+        display: block;
     }
 }

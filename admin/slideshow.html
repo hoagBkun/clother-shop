@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quản lý Slideshow</title>
+        <link rel="stylesheet" href="../assets/css/admin.css" />
+    </head>
+    <body>
+        <h1>Quản lý Slideshow</h1>
+
+        <!-- Form thêm slide mới -->
+        <form id="slideshow-form">
+            <label for="slideshow-title">Tiêu đề:</label>
+            <input type="text" id="slideshow-title" placeholder="Tiêu đề slide" required />
+
+            <label for="slideshow-image">Đường dẫn hình ảnh:</label>
+            <input type="url" id="slideshow-image" placeholder="URL hình ảnh" required />
+
+            <button type="submit">Thêm Slideshow</button>
+        </form>
+
+        <!-- Danh sách các slideshow hiện tại -->
+        <ul id="slideshow-list"></ul>
+
+        <script src="../assets/js/slideshow.js"></script>
+    </body>
+</html>
